@@ -4,10 +4,15 @@ import '../screens/screens.dart';
 
 class AppRoutes {
   static const initialRoute = 'basic_design';
+  static const scrollDesign = 'scroll_design';
 
   static const screensOptions = <_ScreenRoute>[
     _ScreenRoute(
       route: initialRoute,
+      screen: BasicDesignScreen(),
+    ),
+    _ScreenRoute(
+      route: scrollDesign,
       screen: BasicDesignScreen(),
     ),
   ];
