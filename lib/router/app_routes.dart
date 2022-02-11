@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:layout_tutorial1/screens/scroll_screen.dart';
 
 import '../screens/screens.dart';
 
@@ -13,7 +14,7 @@ class AppRoutes {
     ),
     _ScreenRoute(
       route: scrollDesign,
-      screen: BasicDesignScreen(),
+      screen: ScrollScreen(),
     ),
   ];
 
