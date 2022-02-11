@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:layout_tutorial1/screens/scroll_screen.dart';
 
 import '../screens/screens.dart';
 
 class AppRoutes {
   static const initialRoute = 'basic_design';
   static const scrollDesign = 'scroll_design';
+  static const homeScreen = 'home_screen';
 
   static const screensOptions = <_ScreenRoute>[
     _ScreenRoute(
@@ -15,6 +15,10 @@ class AppRoutes {
     _ScreenRoute(
       route: scrollDesign,
       screen: ScrollScreen(),
+    ),
+    _ScreenRoute(
+      route: homeScreen,
+      screen: HomeScreen(),
     ),
   ];
 

@@ -9,7 +9,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.scrollDesign,
+      initialRoute: AppRoutes.homeScreen,
       routes: AppRoutes.getAppRoutes,
     );
   }
