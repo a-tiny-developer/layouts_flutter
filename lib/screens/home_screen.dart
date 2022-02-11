@@ -10,6 +10,25 @@ class HomeScreen extends StatelessWidget {
       body: Stack(
         children: const [
           Background(),
+          _HomeBody(),
+        ],
+      ),
+    );
+  }
+}
+
+class _HomeBody extends StatelessWidget {
+  const _HomeBody({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      child: Column(
+        children: const [
+          // Titles
+          PageTitle(),
         ],
       ),
     );
