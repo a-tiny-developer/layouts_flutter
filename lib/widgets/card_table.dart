@@ -32,7 +32,7 @@ class CardTable extends StatelessWidget {
             ),
             _SingleCard(
               color: Colors.purpleAccent,
-              icon: Icons.money,
+              icon: Icons.attach_money,
               text: 'Bill',
             ),
           ],
@@ -84,6 +84,45 @@ class _SingleCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return _CardBackground(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          CircleAvatar(
+            backgroundColor: color,
+            child: Icon(
+              icon,
+              size: 40,
+              color: Colors.white,
+            ),
+            radius: 30,
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Text(
+            text,
+            style: TextStyle(
+              color: color,
+              fontSize: 18,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _CardBackground extends StatelessWidget {
+  const _CardBackground({
+    Key? key,
+    required this.child,
+  }) : super(key: key);
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.all(15),
       child: ClipRRect(
@@ -92,34 +131,10 @@ class _SingleCard extends StatelessWidget {
           filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
           child: Container(
             height: 180,
-            decoration: BoxDecoration(
-              color: const Color.fromRGBO(62, 62, 107, 0.7),
-              borderRadius: BorderRadius.circular(20),
+            decoration: const BoxDecoration(
+              color: Color.fromRGBO(62, 62, 107, 0.7),
             ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                CircleAvatar(
-                  backgroundColor: color,
-                  child: Icon(
-                    icon,
-                    size: 40,
-                    color: Colors.white,
-                  ),
-                  radius: 30,
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  text,
-                  style: TextStyle(
-                    color: color,
-                    fontSize: 18,
-                  ),
-                ),
-              ],
-            ),
+            child: child,
           ),
         ),
       ),
