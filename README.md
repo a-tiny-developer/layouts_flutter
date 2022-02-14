@@ -1,16 +1,12 @@
-# layout_tutorial1
+# Layouts - Flutter
 
-A new Flutter project.
+Simple app to learn Flutter
 
-## Getting Started
+App based on [Flutter: Tu guía completa de desarrollo para IOS y Android](https://www.udemy.com/course/flutter-ios-android-fernando-herrera/)
+![Screenshot_2022-02-13-21-10-37-609_com example layouts_flutter](https://user-
 
-This project is a starting point for a Flutter application.
+images.githubusercontent.com/93559957/153794858-6111e3b4-912a-4cba-b88f-11df3dd3ae36.jpg)
 
-A few resources to get you started if this is your first Flutter project:
+https://user-images.githubusercontent.com/93559957/153794861-c39715a1-2def-4392-9640-8a83e3a0df10.mp4
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://user-images.githubusercontent.com/93559957/153794864-7b4bc5cd-c361-4adf-8e21-445ac1e7c21c.mp4
